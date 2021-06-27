@@ -1,0 +1,1005 @@
+using System;
+ class HelloWorld
+ {
+     public static void Main()
+     {
+         Console.WriteLine("Hello World");
+         
+     }
+ }
+ 
+ using System;
+ public class Programs
+ {
+   public static void Main()
+   {
+     string fn,ln;
+     Console.Write("Enter your first name\n");
+     fn=Console.ReadLine();
+     Console.Write("Enter your last name\n");
+     ln=Console.ReadLine();
+     Console.Write("Your full name is {0} {1}",fn,ln);
+   }
+ }
+ 
+using System;
+ public class check{
+     static void Main(string[] args)
+     {
+         int x,y;
+         bool result=true;
+         Console.WriteLine("Enter the value for x");
+         x=Convert.ToInt32(Console.ReadLine());
+         Console.WriteLine("Enter the value for y");
+         y=Convert.ToInt32(Console.ReadLine());
+         
+         if(x<y)
+         {
+             result=true;
+         }
+         
+         Console.WriteLine("x is less than y is {0}",result);
+     }
+ }
+ 
+using System;
+ class HelloWorld
+ {
+     public static void Main()
+     {
+         Console.WriteLine("\"Hello World\"");
+     }
+ }
+ using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+ 
+ namespace ProgFundamentals3             //DO NOT CHANGE the name of namespace
+ {
+     public class Program                 //DO NOT CHANGE the name of class 'Program'
+     {
+         public static void Main(string[] args)       //DO NOT CHANGE 'Main' Signature
+         {
+            
+            //Fill the code here
+            string s="casablanca";
+            char ch1,ch2;
+            int i,l,c=0;
+            
+            l=s.Length;
+            
+            for(i=0;i<l;i++)
+            {
+                c=i+1;
+                Console.Write("Enter letter {0}:",c);
+                ch2=Console.ReadLine()[0];
+                
+                ch1=s[i];
+                
+                if(ch1!=ch2)
+                {
+                    Console.WriteLine("The spelling is wrong");
+                }
+                
+            }
+ 
+         }
+     }
+ }
+
+using System;
+ public class details
+ {
+     static void Main(string[] args)
+     {
+         string name,city,gen,mob;
+         int pin;
+         double age;
+         
+         Console.WriteLine("Enter name");
+         name=Console.ReadLine();
+         
+         Console.WriteLine("Enter age(completed years and months)");
+         age=Convert.ToDouble(Console.ReadLine());
+         
+         Console.WriteLine("Enter gender('M' for Male and 'F' for Female)");
+         gen=Console.ReadLine();
+         
+         Console.WriteLine("Enter city");
+         city=Console.ReadLine();
+         
+         Console.WriteLine("Enter mobile number");
+         mob=Console.ReadLine();
+         
+         Console.WriteLine("Enter pincode");
+         pin=Convert.ToInt32(Console.ReadLine());
+         
+         Console.WriteLine("Name:   {0}",name);
+         Console.WriteLine("Age:    {0}",age);
+         Console.WriteLine("Gender:  {0}",gen);
+         Console.WriteLine("City:   {0}",city);
+         Console.WriteLine("Mobile:  {0}",mob);
+         Console.WriteLine("Pincode:  {0}",pin);
+         
+         
+     }
+ }
+ 
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+ 
+ namespace ProgFundamentals2           //DO NOT Change namespace name
+ {
+     public class Program              //DO NOT Change class 'Program' name
+     {
+         public static void Main(string[] args)    //DO NOT Change 'Main' method Signature
+         {
+             //Implement your code here
+             int npi,npu,npe,tpi,tpu,tpe,tot;
+             double gst,cess;
+             
+             Console.Write("Enter the number of pizzas bought:");
+             npi=Convert.ToInt32(Console.ReadLine());
+             Console.Write("Enter the number of puffs bought:");
+             npu=Convert.ToInt32(Console.ReadLine());
+             Console.Write("Enter the number of pepsi bought");
+             npe=Convert.ToInt32(Console.ReadLine());
+             
+             tpi=npi*200;
+             tpu=npu*40;
+             tpe=npe*120;
+             
+             tot=tpi+tpu+tpe;
+             
+             gst=0.12*tot;
+             cess=0.05*tot;
+             
+             Console.WriteLine("Bill Details");
+             Console.WriteLine("Cost of Pizzas:{0}",tpi);
+             Console.WriteLine("Cost of Puffs:{0}",tpu);
+             Console.WriteLine("Cost of Pepsis:{0}",tpe);
+             Console.WriteLine("GST 12%:{0}",gst);
+             Console.WriteLine("CESS 5%:{0}",cess);
+             Console.WriteLine("Total Price:{0}",tot);
+             
+             
+         }
+     }
+ }
+
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+ 
+ namespace ProgFundamentals8               //DO NOT CHANGE the name of namespace
+ {
+     public class Program                  //DO NOT CHANGE the name of class 'Program'
+     { 
+         public static void Main(string[] args)      //DO NOT CHANGE 'Main' Signature
+         {
+            
+            // Fill the code here
+            int n,c=0,i;
+            Console.Write("Enter starting number:");
+            n=Convert.ToInt32(Console.ReadLine());
+            
+            for(i=n;c<=10;i++)
+            {
+                if(i%2==0)
+                {
+                    Console.Write("{0} ",i);
+                    c++;
+                }
+            }
+            
+         }
+     }
+ }
+
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+ 
+ namespace ProgFundamentals1             //DO NOT CHANGE the name of namespace
+ {
+     public class Program                //DO NOT CHANGE the name of class 'Program'
+     { 
+         public static void Main(string[] args)        //DO NOT CHANGE 'Main' Signature
+         {
+             //Fill the code here
+             string name,co;
+             int age;
+             
+             Console.Write("Enter your name:");
+             name=Console.ReadLine();
+             Console.Write("Enter your age:");
+             age=Convert.ToInt32(Console.ReadLine());
+             Console.Write("Enter your country:");
+             co=Console.ReadLine();
+             
+             Console.WriteLine("Welcome {0}. Your age is {1} and you are from {2}",name,age,co);
+         }
+     }
+ }
+
+using System;
+      using System.Collections.Generic;
+      using System.Linq;
+      using System.Text;
+      using System.Threading.Tasks;
+      
+      namespace ProgFundamentals7                 //DO NOT CHANGE the name of namespace
+      {
+          public class Program                    //DO NOT CHANGE the name of class 'Program'
+         {
+             public static void Main(string[] args)      //DO NOT CHANGE 'Main' Signature
+             {
+             //Implement your code here
+             double price=0;
+             Console.WriteLine("Enter the name of the product :");
+             string pro=Console.ReadLine();
+             Console.WriteLine("Enter the price of the product :");
+             int pri=Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("Is the product on SALE (yes/no) :");
+             string sale=Console.ReadLine();
+             Console.WriteLine("Enter number of product sold in day 1");
+             int d1=Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("Enter number of product sold in day 2");
+             int d2=Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("Enter number of product sold in day 3");
+             int d3=Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine(pro);
+             if(String.Equals(sale,"no"))
+             {
+                 Console.WriteLine("Day 1 sales total : "+(d1*pri));
+                 Console.WriteLine("Day 2 sales total : "+(d2*pri));
+                 Console.WriteLine("Day 3 sales total : "+(d3*pri));
+             }
+             else
+             {
+                price=(d1*pri)-(d1*pri*0.07);
+                 Console.WriteLine("Day 1 sales total : "+price);
+                 price=(d2*pri)-(d2*pri*0.07);
+                price=price-(price*0.07);
+                Console.WriteLine("Day 2 sales total : "+price);
+                price=(d3*pri)-(d3*pri*0.07);
+                price=price-(price*0.07);
+                 price=price-(price*0.07);
+                 Console.WriteLine("Day 3 sales total : "+price);
+                 
+             }
+             }
+         }
+     }
+	 
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+ 
+ namespace ProgFundamentals4              //DO NOT CHANGE the name of namespace
+ {
+     public class Program                 //DO NOT CHANGE the name of class 'Program'
+     {
+         public static void Main(string[] args)   //DO NOT CHANGE 'Main' Signature
+         {
+             char ch;
+             int n;
+             Console.WriteLine("Enter any alphabet : ");
+             //Get the value
+             ch=Console.ReadLine()[0];
+ 
+             Console.WriteLine("Enter number of repeats : ");
+             //Get the value
+             n=Convert.ToInt32(Console.ReadLine());
+             
+             //Implement your code here
+             int c=0;
+             
+         for (int i=1;i<=n;i++)
+         {
+             for (int j=1;j<=(n-i);j++)
+             {
+                 Console.Write(" ");
+             }
+                 c=0;
+             for (int t = 1; t < i * 2; t++)
+             {
+                 c++;
+                 Console.Write(ch);
+             }
+             if(c==n)
+             break;
+                 
+             Console.WriteLine();
+         }
+         
+         Console.ReadLine();
+ 
+         }
+     }
+ }
+
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+      
+      namespace ProgFundamentals5              //DO NOT CHANGE the name of namespace
+      {
+          public class Program                //DO NOT CHANGE the name of class 'Program'
+         {
+             public static void Main(string[] args)        //DO NOT CHANGE 'Main' Signature
+             {
+                 //Implement your code here
+                 int eng,math,lang;
+                 string grade;
+                 Console.WriteLine("Enter English marks :");
+                 eng=Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("Enter Math marks :");
+                 math=Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("Enter Language marks :");
+                 lang=Convert.ToInt32(Console.ReadLine());
+                 if(math<0 || eng<0 || lang<0)
+                 {
+                     Console.WriteLine("Mark cannot be less than 0");
+                 }
+                 else
+                 {
+                     if(eng>=80 && eng<=100)
+                         grade="A+";
+                     else if(eng>=60 && eng<80)
+                         grade="A";
+                     else if(eng>=40 && eng<60)
+                         grade="B";
+                     else
+                         grade="FAIL";
+                         
+                     Console.WriteLine("English Grade : {0}",grade);
+                    
+                     if(math>=80 && math<=100)
+                         grade="A+";
+                     else if(math>=60 && math<80)
+                         grade="A";
+                     else if(math>=40 && math<60)
+                         grade="B";
+                     else
+                         grade="FAIL";
+                         
+                     Console.WriteLine("Math Grade : {0}",grade);
+                     
+                     if(lang>=80 && lang<=100)
+                         grade="A+";
+                     else if(lang>=60 && lang<80)
+                         grade="A";
+                     else if(lang>=40 && lang<60)
+                         grade="B";
+                     else
+                         grade="FAIL";
+                         
+                     Console.WriteLine("Language Grade : {0}",grade);
+                 }
+             }
+        }
+     }
+	 
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+      
+      namespace ProgFundamentals9             //DO NOT CHANGE the name of namespace
+      {
+          public class Program                //DO NOT CHANGE the name of class 'Program'
+         {
+             public static void Main(string[] args)      //DO NOT CHANGE 'Main' Signature
+             {
+                
+              // Fill the code here
+                string []name=new string[20];
+                string []place=new string[20];
+                string []stat=new string[20];
+                string []conti=new string[20];
+                int i=0;
+                do{
+                    Console.WriteLine("Enter Name : ");
+                    name[i]=Console.ReadLine();
+                    Console.WriteLine("Enter Place : ");
+                    place[i]=Console.ReadLine();
+                    Console.WriteLine("Enter marital status(y/n) : ");
+                    stat[i]=Console.ReadLine();
+                    Console.WriteLine("Do you wish to continue(y/n) : ");
+                    conti[i]=Console.ReadLine();
+                    i++;
+                }while(String.Equals(conti[i],"y"));
+                for(int j=0;j<i;j++)
+                {
+                    Console.WriteLine("Confirming Information");
+                    Console.WriteLine(name[j]+"\n"+place[j]+"\nMarried : "+stat[j]);
+                }
+             }
+         }
+     }
+	 
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+  
+      namespace Departments           //DO NOT CHANGE the name of namespace
+      {
+          public class Program              //DO NOT CHANGE the name of class 'Program'
+        {
+             public static void Main(string[] args)     //DO NOT CHANGE 'Main' Signature
+             {
+                 int cs,mech,met;
+                 Console.WriteLine("Total students placed in CS ");
+                 //Add code here
+                 cs=Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("Total students placed in MECH ");
+                //Add code here
+                 mech=Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("Total students placed in MET ");
+                 //Add code here
+                 met=Convert.ToInt32(Console.ReadLine());
+                 //Implement the logic here
+                 if(cs>mech && cs>met)
+                     Console.WriteLine("Highest placement CS");
+                 else if(mech>cs && mech>met)
+                     Console.WriteLine("Highest placement MECH");
+                 else if(met>cs && met>mech)
+                     Console.WriteLine("Highest placement MET");
+                 else if(cs==mech && cs>met)
+                 {
+                     Console.WriteLine("Highest placement CS");
+                     Console.WriteLine("Highest placement MECH");
+                 }
+                else if(cs==met && cs>mech)
+                 {
+                     Console.WriteLine("Highest placement CS");
+                     Console.WriteLine("Highest placement MET");
+                 }
+                 else if(mech==met && mech>cs)
+                 {
+                     Console.WriteLine("Highest placement MECH");
+                     Console.WriteLine("Highest placement MET");
+                 }
+             }
+         }
+     }
+	 
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+      
+      namespace ProgFundamentals12                 //DO NOT CHANGE the name of namespace
+      {
+          public class Program                    //DO NOT CHANGE the name of class 'Program'
+         {
+             public static void Main(string[] args)   //DO NOT CHANGE 'Main' Signature
+             {
+                
+                // Fill the code here
+                Console.WriteLine("Number of Rows : ");
+                int r=Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Number of Symbols : ");
+                int s=Convert.ToInt32(Console.ReadLine());
+                int i=r-1;
+                while(r>0 || i>0)
+                {
+                    if(r>0)
+                    {
+                    for(int j=0;j<s;j++)
+                    Console.Write("/\\");
+                    Console.WriteLine();
+                    r--;
+                    }
+                    if(i>0)
+                    {
+                    Console.Write("|");
+                    for(int j=2;j<s*2;j++)
+                    Console.Write(" ");
+                    Console.Write("|");
+                    Console.WriteLine();
+                    i--;
+                    }
+                }
+                
+             }
+         }
+     }
+	 
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+      
+      namespace Score            //DO NOT CHANGE the name of namespace
+      {
+          public class Program                //DO NOT CHANGE the name of class 'Program'
+         {
+             public static void Main(string[] args)   //DO NOT CHANGE 'Main' Signature
+             {
+                 //Implement code here
+                 string []score=new string[6];
+                 int b=0,t=0,d=0;
+                 for(int i=0;i<6;i++)
+                 {
+                     Console.WriteLine("Player Name : ");
+                     score[i]=Console.ReadLine();
+                 }
+                 for(int i=0;i<6;i++)
+                 {
+                     if(i != 0)
+                     {
+                         if((String.Equals(score[i],"Bill")) && (String.Equals(score[i-1],"Bill")))
+                         b=b+2;
+                         else if((String.Equals(score[i],"Tommy")) && (String.Equals(score[i-1],"Tommy")))
+                         t=t+2;
+                         else if((String.Equals(score[i],"Daisy")) && (String.Equals(score[i-1],"Daisy")))
+                         d=d+2;
+                         else if(String.Equals(score[i],"Bill"))
+                         b++;
+                         else if(String.Equals(score[i],"Tommy"))
+                         t++;
+                         else if(String.Equals(score[i],"Daisy"))
+                         d++;
+                     }
+                     else
+                     {
+                         if(String.Equals(score[i],"Bill"))
+                         b++;
+                         else if(String.Equals(score[i],"Tommy"))
+                         t++;
+                         else if(String.Equals(score[i],"Daisy"))
+                         d++;
+                     }
+                 }
+                 Console.WriteLine("Bill Score : "+b);
+                 Console.WriteLine("Tommy Score : "+t);
+                 Console.WriteLine("Daisy Score : "+d);
+             }
+         }
+     }
+	 
+using System;
+     class Product
+     {
+         private int productId;
+         private String productName;
+         private double price;
+         
+        public int ProductId{
+            get{
+                return this.productId;
+            }
+            set{
+                this.productId=value;
+            }
+        }
+        
+        public string ProductName{
+            get{
+                return this.productName;
+            }
+            set{
+                this.productName=value;
+            }
+        }
+        
+        public double Price{
+            get{
+                return this.price;
+            }
+            set{
+                if(value<0){
+                    this.price=0;
+                }
+                else{
+                    this.price=value;
+                }
+            }
+        }
+        
+         public Product()
+         {
+             this.productId=0;
+             this.productName=null;
+             this.Price=0;
+         }
+       
+         public Product(int productId,string productName,double price)
+         {
+             this.productId=productId;
+             this.ProductName=productName;
+             this.price=price;
+         }
+     
+         public void Display()
+         {
+             Console.WriteLine("Product ID:{0}",productId);
+             Console.WriteLine("Product Name:{0}",productName);
+             Console.WriteLine("Product Price:{0}",price);
+         }
+         
+         class Program
+         {
+             static void Main(string[] args)
+             {
+                 Console.WriteLine("Enter product id");
+                 int i=Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("Enter product name");
+                 string s=Console.ReadLine();
+                 Console.WriteLine("Enter product price");
+                 double p=Convert.ToInt32(Console.ReadLine());
+                 Product obj=new Product(i,s,p);
+                 obj.Display();
+                 
+             }
+         }
+     }
+	 
+using System;
+ using System.IO;
+      
+      public class Person
+      {
+          //Fill code here
+          private string firstName;
+          private string lastName;
+          private DateTime dob;
+         private string age;
+         public string FirstName
+         {
+            get{return firstName;}
+            set{firstName = value;}
+         }
+         public string LastName
+         {
+             get{return lastName;}
+             set{lastName = value;}
+         }
+         public DateTime Dob{
+             get{return dob;}
+             set{dob = value;}
+         }
+         public string Adult
+         {
+             get{
+                 if(GetAge(dob)>=18)
+                 return "Adult";
+                 else
+                 return "False";
+             }
+         }
+         public int GetAge(DateTime dob)
+         {
+             int age = DateTime.Now.Year - dob.Year;
+             return age;
+         }
+         public void DisplayDetails()
+         {
+             Console.WriteLine("First Name: "+firstName);
+             Console.WriteLine("Last Name: "+lastName);
+             Console.WriteLine("Age: "+GetAge(dob));
+             Console.WriteLine(Adult);
+         }
+     }
+     
+     public class Progarm
+     {
+         public static void Main(String[] args)
+         {
+             //Fill code here  
+             Person p = new Person();
+             Console.WriteLine("Enter first name");
+             p.FirstName = Console.ReadLine();
+             Console.WriteLine("Enter last name");
+             p.LastName = Console.ReadLine();
+             Console.WriteLine("Entre date of birth in yyyy/mm/dd format");
+             p.Dob = Convert.ToDateTime(Console.ReadLine());
+             p.DisplayDetails();
+         }
+     }
+	 
+	 
+//Implement code here
+ using System;
+ public class Account
+ {
+     private int id;
+     private string accountType;
+     private double balance;
+     
+     public int Id{
+         get{
+             return this.id;
+         }
+         set{
+             this.id=value;
+         }
+     }
+     
+     public string AccountType{
+         get{
+             return this.AccountType;
+         }
+         set{
+             this.accountType=value;
+         }
+     }
+     
+     public double Balance{
+         get{
+             return this.balance;
+         }
+         set{
+             this.balance=value;
+         }
+     }
+     
+     public Account()
+     {
+         this.id=0;
+         this.AccountType=accountType;
+         this.Balance=balance;
+     }
+     
+     public Account(int i,string accountType,double balance)
+     {
+         this.Id=0;
+         this.AccountType=null;
+         this.Balance=balance;
+     }
+     
+     public bool WithDraw(double amount)
+     {
+         if(balance>amount)
+         {
+             balance=balance-amount;
+             return true;
+         }
+         else
+         {
+             return false;
+         }
+     }
+     
+     public string GetDetails()
+     {
+     string str=string.Format("Account ID:{0}\nAccount Type:{1}\nBalance:{2}",id,accountType,balance);
+     return str;
+     }
+ }  
+     
+     public class Program
+     {
+       static void Main(string[] args)
+         {
+             Console.WriteLine("Enter account id");
+             int i=Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("Enter account type");
+             string acc=Console.ReadLine();
+             Console.WriteLine("Enter account balance");
+             double bal=Convert.ToInt32(Console.ReadLine());
+             Account a2=new Account(i,acc,bal);
+             string str2=a2.GetDetails();
+             Console.WriteLine(str2);
+             Console.WriteLine("Enter amount to withdraw");
+             double with=Convert.ToDouble(Console.ReadLine());
+             bool calling=a2.WithDraw(with);
+             if(calling){
+                 Console.WriteLine("New Balance:"+(bal-with));
+             }
+             
+         }
+     }
+	 
+	 
+
+using System;
+ public class CalculatorProgram
+ {
+     public int Addition(int a, int b)
+     {
+         return (a+b);
+     }
+     public int Subtraction(int a, int b)
+     {
+         return (a-b);
+     }
+     public int Multiplication(int a, int b)
+     {
+         return (a*b);
+     }
+     public double Division(int a, int b, out double remainder)
+     {
+         remainder = a%b;
+         return (a/b);
+     }
+ }
+ 
+ 
+ 
+ public class Program{
+     static void Main()
+     {
+         CalculatorProgram p = new CalculatorProgram();
+         Console.WriteLine("Enter the operator");
+         string opr = Console.ReadLine();
+         Console.WriteLine("Enter the operand");
+         int a = Convert.ToInt32(Console.ReadLine());
+         int b = Convert.ToInt32(Console.ReadLine());
+         
+         if(opr=="+")
+         {
+             Console.WriteLine("Result of {0} + {1} is {2}",a,b,p.Addition(a,b));
+         }
+         if(opr == "-")
+         {
+             Console.WriteLine("Result of {0} - {1} is {2}",a,b,p.Subtraction(a,b));
+         }
+         if(opr=="*")
+         {
+             Console.WriteLine("Result of {0} * {1} is {2}",a,b,p.Multiplication(a,b));
+         }
+         if(opr=="/")
+         {
+             double div = p.Division(a,b, out double remainder);
+             Console.WriteLine("Result of {0} / {1} is {2}",a,b,div);
+             Console.WriteLine("Remainder = {0}",remainder);
+         }
+     }
+ }
+ 
+ 
+ 
+ 
+using System;
+ public class Exer
+ {
+   static void Main(string[] args)
+   {
+     string fn,ls,fname;
+     Console.WriteLine("Enter first name");
+     fn=Console.ReadLine();
+     Console.WriteLine("Enter last name");
+     ls=Console.ReadLine();
+     
+     fname=fn+" "+ls;
+     Console.WriteLine("Full name:{0}",fname);
+     
+   }
+ }
+ 
+ 
+ 
+using System;
+ using System.Collections.Generic;
+ public class nReverse{
+ static void Main(string[] args)
+ {
+     Console.WriteLine("Enter a string");
+   string line =Console.ReadLine();
+   
+   
+   string result = "";
+   
+   List < string > wordsList = new List < string > ();
+   
+   string[] words = line.Split(new [] {" "},StringSplitOptions.None);
+   
+   for (int i = words.Length - 1; i >= 0; i--)
+   {
+    result+=words[i]+" ";
+   }
+   
+   wordsList.Add(result);
+   
+   foreach(String s in wordsList) 
+   {
+    Console.WriteLine(s);
+   }
+  }
+ }
+ 
+ 
+ 
+using System;
+ 
+ public class Program   //DO NOT change the class name
+ {
+     static void Main(string[] args)       //DO NOT change the 'Main' method signature
+     {
+         //Fill code here
+         int n,i,j;
+         Console.WriteLine("Enter a number:");
+         n=Convert.ToInt32(Console.ReadLine());
+         
+         int [,] fa=GetArray(n);
+         
+         for(i=0;i<n;i++)
+         {
+             for(j=0;j<n;j++)
+             {
+                 Console.WriteLine("{0} ",fa[i,j]);
+             }
+             Console.WriteLine();
+         }
+     }
+     
+     public static int[,]  GetArray(int num)
+     {
+         //Fill code here  
+         int [,] d=new int[num,num];
+         int i,j;
+         
+         for(i=0;i<num;i++)
+         {
+             for(j=0;j<num;j++)
+             {
+                 if(i==j)
+                 {
+                     d[i,j]=0;
+                 }
+                 else if(i>j)
+                 {
+                     d[i,j]=-1;
+                 }
+                 else
+                 {
+                     d[i,j]=1;
+                 }
+             }
+         }
+         return d;
+     }
+ }    
+ 
+ 
+
+using System;
+ 
+ class rep
+ {
+ 
+ 	
+   static void Main(string[] args)
+ 	{
+ 
+ 		string s,sr;
+ 		Console.WriteLine("Enter a string");
+ 		s=Console.ReadLine();
+ 		
+ 		sr=s.Replace("the","that");
+ 		
+ 		if(s!=sr)
+ 		{
+ 		    Console.WriteLine("{0}",sr);
+ 		}
+ 		else
+ 		{
+ 		    Console.WriteLine("Word 'the' not found");
+ 		}
+ 		
+ 
+ 	}
+ }
+
+   
